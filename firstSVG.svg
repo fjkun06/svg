@@ -123,4 +123,10 @@
     <!-- <circle cx="70" cy="160" r="30" fill="yellow" /> -->
   </g>
 
+  <script> //<![CDATA[
+    console.log("hello")
+    //]]>
+
+  </script>
+
 </svg>
