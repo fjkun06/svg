@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" height="320px" width="400px" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title xml:lang="en">First SVG</title>
+  //default
+  <defs>
+    <circle cx="70" r="30" id="light" />
+
+    <radialGradient id="red-light-on" fx="0.45" fy="0.4">
+      <stop stop-color="orange" offset="0.1" />
+      <stop stop-color="red" offset="0.8" />
+      <stop stop-color="brown" offset="1.0" />
+    </radialGradient>
+    <radialGradient id="red-light-off" fx="0.45" fy="0.4">
+      <stop offset="0%" stop-color="maroon" />
+      <stop offset="70%" stop-color="#220000" />
+      <stop offset="100%" stop-color="black" />
+    </radialGradient>
+
+    <radialGradient id="yellow-light-on" fx="0.45" fy="0.4">
+      <stop stop-color="#f2ff00" offset="0.1" />
+      <stop stop-color="#c0c021" offset="0.8" />
+      <stop stop-color="#686012" offset="1.0" />
+    </radialGradient>
+    <radialGradient id="yellow-light-off" fx="0.45" fy="0.4">
+
+      <stop offset="0%" stop-color="#A06000" />
+      <stop offset="70%" stop-color="#804000" />
+      <stop offset="100%" stop-color="#502000" />
+    </radialGradient>
+
+    <radialGradient id="green-light-off" fx="0.45" fy="0.4">
+      <stop offset="0%" stop-color="#4f7f18" />
+      <stop offset="70%" stop-color="#13592d" />
+      <stop offset="100%" stop-color="darkGreen" />
+    </radialGradient>
+    <radialGradient id="green-light-on" fx="0.45" fy="0.4">
+      <stop offset="0%" stop-color="#88FF00" />
+      <stop offset="70%" stop-color="forestGreen" />
+      <stop offset="100%" stop-color="darkGreen" />
+    </radialGradient>
+    <linearGradient id="metal" spreadMethod="repeat" gradientTransform="scale(.7) rotate(75)">
+      <stop offset="0%" stop-color="#808080" />
+      <stop offset="25%" stop-color="#404040" />
+      <stop offset="35%" stop-color="#c0c0c0" />
+      <stop offset="50%" stop-color="#808080" />
+      <stop offset="70%" stop-color="#e0e0e0" />
+      <stop offset="75%" stop-color="#606060" />
+      <stop offset="90%" stop-color="#a0a0a0" />
+      <stop offset="100%" stop-color="#808080" />
+    </linearGradient>
+
+  </defs>
+
+  <style>
+    @keyframes cycle {
+      33.3% {
+        visibility: visible;
+      }
+
+      100% {
+        visibility: hidden;
+      }
+    }
+
+    .lit {
+      animation: cycle 9s step-start infinite;
+    }
+
+    .red .lit {
+      animation-delay: -3s;
+    }
+
+    .yellow .lit {
+      animation-delay: -6s;
+    }
+
+    .green .lit {
+      animation-delay: 0s;
+    }
+
+    text {
+      font: bold 60px sans-serif;
+    }
+  </style>
+
+  <rect x="20" y="20" width="100" height="280" fill="url(#metal)" stroke="black" stroke-width="3" />
+  <g stroke="black" stroke-width="2">
+    <!-- <circle cx="70" cy="80" r="30" fill="red" /> -->
+    <g class="red light">
+      //off state
+      <use href="#light" y="80" fill="url(#red-light-off)" />
+      <g class="lit" fill="url(#red-light-on)">
+        //on state
+        <use href="#light" y="80" />
+        <text x="140" y="100" stroke="darkred">
+          STOP
+        </text>
+      </g>
+    </g>
+    <g class="yellow light">
+      //off state
+      <use href="#light" y="160" fill="url(#yellow-light-off)" />
+      <g class="lit" fill="url(#yellow-light-on)" visibility="hidden">
+        //on state
+        <use href="#light" y="160" />
+        <text x="140" y="180" stroke="darkOrange">
+          SLOW
+        </text>
+      </g>
+    </g>
+    <g class="green light">
+      //off state
+      <use href="#light" y="240" fill="url(#green-light-off)" />
+      <g fill="url(#green-light-on)" class="lit" visibility="hidden">
+        //on state
+        <use href="#light" y="240" />
+        <text x="140" y="260" stroke="darkGreen">
+          GO!
+        </text>
+      </g>
+
+
+    </g>
+    <!-- <circle cx="70" cy="160" r="30" fill="yellow" /> -->
+  </g>
+
+
+</svg>
