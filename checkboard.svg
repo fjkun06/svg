@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" height="9in" width="9in">
+  <title>Checkerboard</title>
+  <style type="text/css">
+    .board {
+      fill: saddleBrown;
+    }
+
+    .white {
+      fill: linen;
+    }
+
+    .black {
+      fill: #222;
+    }
+  </style>
+  <script>
+    //<![CDATA[
+    window.addEventListener("DOMContentLoaded", () => {
+      function checkerboard() {
+        //initialising variables
+        const squares = 8;
+        const svg = document.documentElement;
+        const svgNS = svg.namespaceURI;
+
+        //actual drawing function
+        const draw = () => {
+          //creating rect svg and setting attriutes
+          const board = document.createElementNS(svgNS, "rect");
+          board.setAttribute("width", "100%");
+          board.setAttribute("height", "100%");
+          board.setAttribute("class", "board");
+          svg.appendChild(board);
+
+          let square;
+
+          //creating individual squares and positioning them
+          for (let i = 0; i < squares; i++) {
+            for (let j = 0; j < squares; j++) {
+              square = document.createElementNS(svgNS, "rect");
+              square.setAttribute("x", (i + 0.5) + "in");
+              square.setAttribute("y", (j + 0.5) + "in");
+              square.setAttribute("width", "1in");
+              square.setAttribute("height", "1in");
+              square.setAttribute("class", (i + j) % 2? "black" : "white");
+              svg.appendChild(square);
+            }
+          }
+
+          svg.classList.add("initialised")
+        }
+
+        //checking if svg already exists
+        if (!(svg.classList && svg.classList.contains("initialised"))) draw();
+      }
+
+      checkerboard();
+    })
+    //]]>
+  </script>
+</svg>
