@@ -10,7 +10,7 @@
     
   }
 </style>
-<ellipse cx="7cm" cy="5.5cm" rx="6.5cm" ry="5cm" fill="red" />
+<!-- <ellipse cx="7cm" cy="5.5cm" rx="6.5cm" ry="5cm" fill="red" /> -->
 <!-- <line y1="100" x2="100"/> -->
 <script>
   //<![CDATA[

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10m" height="10cm" xml:lang="en" viewBox="-5 -5 30 30">
+  <title>SVG Paths</title>
+  <style>
+    svg {
+      margin-left: 10em;
+    }
+  </style>
+  <!-- <path d="M3,10 L10,0 17,10" fill="red" stroke="maroon" stroke-width="2px" /> -->
+  <!-- <path d="M3,10 L10,0 L17,10 L10,20 L3,10 Z" /> -->
+  <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd"/>
+  <!-- <path d="m15,10 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="yellow" stroke="dodgerBlue"/> -->
+  <!-- <path d="M9,11 L10,18 10,10" fill="blue" stroke="gray"/> -->
+  <path d="M3,10 L10,0 17,10 10,20 Z
+ M9,11 L10,18 10,10 15,10 11,9 10,2 10,10 5,10 z" fill="green"/>
+</svg>
