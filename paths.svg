@@ -7,9 +7,20 @@
   </style>
   <!-- <path d="M3,10 L10,0 17,10" fill="red" stroke="maroon" stroke-width="2px" /> -->
   <!-- <path d="M3,10 L10,0 L17,10 L10,20 L3,10 Z" /> -->
-  <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd"/>
+  <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd" />
   <!-- <path d="m15,10 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="yellow" stroke="dodgerBlue"/> -->
   <!-- <path d="M9,11 L10,18 10,10" fill="blue" stroke="gray"/> -->
   <path d="M3,10 L10,0 17,10 10,20 Z
- M9,11 L10,18 10,10 15,10 11,9 10,2 10,10 5,10 z" fill="green"/>
+ M9,11 L10,18 10,10 15,10 11,9 10,2 10,10 5,10 z" fill="green" />
+  <!-- <path d="M10,5 H30 V15 H0 Z" /> -->
+
+  <path d="M10,5 L30,5 30,15 0,15 Z" fill="red" />
+
+  <path id="axes" fill="none" stroke="royalBlue" stroke-width="0.3" d="M-5, 0H25 M 0,-5V25" />
+  <path id="major-grid" fill="none" stroke="cornflowerBlue" stroke-width="0.15" d="M-5, 5H25 M 5,-5V25
+ M-5,10H25 M10,-5V25
+ M-5,15H25 M15,-5V25 M-5,20H25 M20,-5V25" />
+ <polyline points="3,10 10,0 17,10 10,20" />
+ 
+
 </svg>
