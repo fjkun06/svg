@@ -10,7 +10,7 @@
       fill: linearGradient(to left, red, green);
     }
   </style>
-  <path d="
+  <!-- <path d="
   M0,1 H25 M1,0 V25
   M0,3 H25 M3,0 V25
   M0,5 H25 M5,0 V25
@@ -23,19 +23,9 @@
   M0,19 H25 M19,0 V25
   M0,21 H25 M21,0 V25
   M0,23 H25 M23,0 V25
-  " fill="red" stroke="maroon" stroke-width=".2px" />
-  <path d="M 80 80
-  A 45 45, 0, 0, 0, 125 125
-  L 125 80 Z" fill="green" />
-  <path d="M 230 80
-  A 45 45, 0, 1, 0, 275 125
-  L 275 80 Z" fill="red" />
-  <path d="M 80 230
-  A 45 45, 0, 0, 1, 125 275
-  L 125 230 Z" fill="purple" />
-  <path d="M 230 230
-  A 45 45, 0, 1, 1, 275 275
-  L 275 230 Z" fill="blue" />
+  " fill="red" stroke="maroon" stroke-width=".2px" /> -->
+<text x="1em" y="60" font-size="64" font-weight="bold" font-family="Brush Script MT, Brush Script,
+Segoe Script, cursive">Some Test SVG Text</text>
   <!-- <path d="M3,10 L10,0 L17,10 L10,20 L3,10 Z" /> -->
   <!-- <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd" /> -->
   <!-- <path d="m15,10 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="yellow" stroke="dodgerBlue"/> -->
