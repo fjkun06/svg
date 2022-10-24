@@ -1,26 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10m" height="10cm" xml:lang="en" viewBox="-5 -5 30 30">
+<svg xmlns="http://www.w3.org/2000/svg" width="10Cm" height="10cm" xml:lang="en" viewBox="-5 -5 30 30">
   <title>SVG Paths</title>
   <style>
     svg {
-      margin-left: 10em;
+      position: relative;
+      border: 1px solid red;
+    }
+
+    .pathi {
+      fill: linearGradient(to left, red, green);
     }
   </style>
-  <!-- <path d="M3,10 L10,0 17,10" fill="red" stroke="maroon" stroke-width="2px" /> -->
+  <path d="
+  M0,1 H25 M1,0 V25
+  M0,3 H25 M3,0 V25
+  M0,5 H25 M5,0 V25
+  M0,7 H25 M7,0 V25
+  M0,9 H25 M9,0 V25
+  M0,11 H25 M11,0 V25
+  M0,13 H25 M13,0 V25
+  M0,15 H25 M15,0 V25
+  M0,17 H25 M17,0 V25
+  M0,19 H25 M19,0 V25
+  M0,21 H25 M21,0 V25
+  M0,23 H25 M23,0 V25
+  " fill="red" stroke="maroon" stroke-width=".2px" />
+  <path d="M 80 80
+  A 45 45, 0, 0, 0, 125 125
+  L 125 80 Z" fill="green" />
+  <path d="M 230 80
+  A 45 45, 0, 1, 0, 275 125
+  L 275 80 Z" fill="red" />
+  <path d="M 80 230
+  A 45 45, 0, 0, 1, 125 275
+  L 125 230 Z" fill="purple" />
+  <path d="M 230 230
+  A 45 45, 0, 1, 1, 275 275
+  L 275 230 Z" fill="blue" />
   <!-- <path d="M3,10 L10,0 L17,10 L10,20 L3,10 Z" /> -->
-  <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd" />
+  <!-- <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd" /> -->
   <!-- <path d="m15,10 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="yellow" stroke="dodgerBlue"/> -->
   <!-- <path d="M9,11 L10,18 10,10" fill="blue" stroke="gray"/> -->
-  <path d="M3,10 L10,0 17,10 10,20 Z
+  <!-- <path d="M3,10 L10,0 17,10 10,20 Z
  M9,11 L10,18 10,10 15,10 11,9 10,2 10,10 5,10 z" fill="green" />
-  <!-- <path d="M10,5 H30 V15 H0 Z" /> -->
+  <path d="M10,5 H30 V15 H0 Z" /> -->
 
-  <path d="M10,5 L30,5 30,15 0,15 Z" fill="red" />
+  <!-- <path d="M10,5 L30,5 30,15 0,15 Z" fill="red" />
 
   <path id="axes" fill="none" stroke="royalBlue" stroke-width="0.3" d="M-5, 0H25 M 0,-5V25" />
   <path id="major-grid" fill="none" stroke="cornflowerBlue" stroke-width="0.15" d="M-5, 5H25 M 5,-5V25
  M-5,10H25 M10,-5V25
  M-5,15H25 M15,-5V25 M-5,20H25 M20,-5V25" />
- <polyline points="3,10 10,0 17,10 10,20" />
- 
+ <polyline points="3,10 10,0 17,10 10,20" /> -->
+
+  <!-- <path d="M0,0 Q 10,0 10,10" fill="transparent" stroke="black" /> -->
+  <!-- <ellipse cx="10px" cy="10px" rx="5px" ry="15px" fill="red"/> -->
+  <!-- <path d="M4,10 Q2,0 12,0 " fill="transparent" stroke="maroon"/> -->
+  <!-- <path d="M15,19 Q15,17 17,16 T21,13 Q23,11 23,9 T21,5 Q17,2 14,7 T14,7 Q11,2 7,5 T6,12 Q9,14 10,16 T16,18 Z" fill="RED"/> -->
+  <!-- <path d="M4,10 Q2,0 14,0" fill="transparent" stroke="maroon"/> -->
+  <!-- <path fill="red" class="pathi"
+  d="M 10,6
+  Q 10,0 15,0
+  T 20,6
+  Q 20,10 15,14
+  T 10,20
+  Q 10,18 5,14
+  T 0,6
+  Q 0,0 5,0
+  T 10,6
+  Z" /> -->
+
+  <!-- <path d="M 3,10
+ C 7,4 4,16 12,14
+ S 19,4 13,8 " stroke="red" stroke-width="0.1" fill="transparent"/> -->
+  <!-- <path fill="transparent" d="M10,15 Q11,20 15,20 T20 ,15 Q20,8 15,5 T10,0 Q10,1 5,5 T0,15 Q1,20 5,20 T 10,15" stroke="blue" stroke-width="0.1"/> -->
+  <!-- <path fill="transparent" d="M10,0
+ C10,3 18,7 19,10 
+ Q20,13 20,15 
+ T19,18 
+ Q17,20 14,20 
+ C10,20 10,16 10,15 
+ Q10,20 5,20
+ T0,15
+ Q0,13 1,10
+ C 2,7 10,3 10,0 Z" 
+ stroke="red" stroke-width="0.1"/>
+ <path d="M 7.5,10.5
+ A 5,5 0 1 1 5.5,5.5
+ A 5,5 0 1 1 10.5,5.5
+ A 5,5 0 1 1 8.5,10.5
+ " fill="black" stroke="red" stroke-width="0.5"/> -->
+  <!-- <path fill="black"
+ d="M 9,15.5
+ A 4,4 0 1 1 5.5,7.5
+ A 5,5 0 1 1 14.5,7.5
+ A 5,5 0 1 1 11,15.5
+ Q 11,20 13,20
+ H 7
+ Q 9,20 9,15.5 Z"
+  /> -->
+  <!-- <path d="M0,0 Q377.95,0 377.95,377.95
+    S 20,18 15,18 C 11,20 10,16 10,15 
+ Q0,377.95 0,0 Z" fill="royalBlue" /> -->
 
 </svg>
