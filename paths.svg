@@ -1,13 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10Cm" height="10cm" xml:lang="en" viewBox="-5 -5 30 30">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" xml:lang="en">
   <title>SVG Paths</title>
   <style>
     svg {
-      position: relative;
       border: 1px solid red;
+      overflow: visible;
     }
 
-    .pathi {
-      fill: linearGradient(to left, red, green);
+    .gasp-lines {
+      stroke: #000;
+      stroke-width: 1px;
+    }
+
+    #t1 {
+      font-size: 50px;
+      font-weight: 100;
+      font-family: Poppins, Brush Script,
+        Segoe Script, cursive;
+      fill: red;
+      stroke: black;
+      stroke-width: 2px;
     }
   </style>
   <!-- <path d="
@@ -24,8 +35,28 @@
   M0,21 H25 M21,0 V25
   M0,23 H25 M23,0 V25
   " fill="red" stroke="maroon" stroke-width=".2px" /> -->
-<text x="1em" y="60" font-size="64" font-weight="bold" font-family="Brush Script MT, Brush Script,
+  <text x="1em" y="60" font-size="64" font-weight="bold" font-family="Poppins, Brush Script,
 Segoe Script, cursive">Some Test SVG Text</text>
+  <text id="t1" x="1em" y="130" font-size="60">Some Test SVG Text</text>
+  <image width="100%" height="100%" href="bycicle.png" />
+  <text x="365" y="710">DTSwiss TK540/X.9 Wheelset</text>
+  <text x="7.5%" y="360">Selle Italia X1 Flow Saddle</text>
+  <text x="475" y="520">Titanium frame</text>
+  <text x="75" y="800">SRAM Apex rear dérailleur</text>
+  <text font-size="28" y="90" x="100" text-anchor="start">
+    Fe <tspan font-style="italic">Fi</tspan>
+    Fo <tspan font-weight="bold">Fum<tspan font-style="italic">!</tspan>
+    </tspan>
+  </text>
+  <text x="210" y="470" dy="0 0 -5 5 0 0 -5 5 0 0 0 -3 5 0 3
+ -3 -3 3 3 -2">
+ …TALKING… LIKE
+ <tspan x="250" y="520" class="shatner">SHATNER…</tspan>
+ </text>
+
+
+
+
   <!-- <path d="M3,10 L10,0 L17,10 L10,20 L3,10 Z" /> -->
   <!-- <path d="M17,10 L24,0 L31,10 L24,20 L17,10 m1,5 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="green" stroke="purple" fill-rule="evenodd" /> -->
   <!-- <path d="m15,10 l7,-10 l7,10 l-7,10 l-7,-10 z" fill="yellow" stroke="dodgerBlue"/> -->
