@@ -35,7 +35,7 @@
   M0,21 H25 M21,0 V25
   M0,23 H25 M23,0 V25
   " fill="red" stroke="maroon" stroke-width=".2px" /> -->
-  <text x="1em" y="60" font-size="64" font-weight="bold" font-family="Poppins, Brush Script,
+  <!-- <text x="1em" y="60" font-size="64" font-weight="bold" font-family="Poppins, Brush Script,
 Segoe Script, cursive">Some Test SVG Text</text>
   <text id="t1" x="1em" y="130" font-size="60">Some Test SVG Text</text>
   <image width="100%" height="100%" href="bycicle.png" />
@@ -52,7 +52,7 @@ Segoe Script, cursive">Some Test SVG Text</text>
  -3 -3 3 3 -2">
  …TALKING… LIKE
  <tspan x="250" y="520" class="shatner">SHATNER…</tspan>
- </text>
+ </text> -->
 
 
 
@@ -123,4 +123,10 @@ Segoe Script, cursive">Some Test SVG Text</text>
     S 20,18 15,18 C 11,20 10,16 10,15 
  Q0,377.95 0,0 Z" fill="royalBlue" /> -->
 
+
+ <defs><path id="p1" d="M100,100 Q150,100 180,150"/></defs>
+
+ <text>
+  <textPath href="#p1" startOffset="10%">Hello</textPath>
+ </text>
 </svg>

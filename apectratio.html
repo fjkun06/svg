@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Scaling inline SVG using a padded wrapper</title>
+  <link rel="stylesheet" href="fixed-ratio-wrapper.css" />
+  <style>
+    body {
+      padding: 0.5em 2em;
+      font-family: sans-serif;
+      background-color: lightSteelBlue;
+      color: indigo;
+    }
+
+    svg {
+      background-color: plum;
+    }
+
+    path {
+      fill: currentColor;
+    }
+
+    /* aspect-ratio control styles */
+    .svg-wrapper {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      box-sizing: content-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .svg-wrapper.square {
+      padding-bottom: 50%;
+      padding-bottom: calc(50% - 1px);
+    }
+
+    .svg-wrapper.ratio-2-1 {
+      padding-bottom: 50%;
+      padding-bottom: calc(50% - 1px);
+      transform: scale(0.5);
+    }
+
+    .svg-wrapper>svg {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="svg-wrapper square">
+    <svg viewBox="0,0 20,20">
+      <title>Spade</title>
+      <path d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+ S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" />
+    </svg>
+  </div>
+  <p>The above SVG will always be square.</p>
+  <div class="svg-wrapper ratio-2-1">
+    <svg viewBox="0,0 40,20">
+      <title>Double Diamond</title>
+      <path d="m3,10 l7,-10 l7,10 l-7,10 l-7,-10z
+ M20,0 m3,10 l7,-10 l7,10 l-7,10 l-7,-10z" />
+    </svg>
+  </div>
+  <p>The second SVG will be twice as wide as it is tall.</p>
+</body>
+
+</html>

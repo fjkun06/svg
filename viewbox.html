@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Scaling with viewBox</title>
+  <link rel="stylesheet" href="flex-scale-viewBox.css" />
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .wrapper {
+      position: relative;
+      height: 10em;
+      width: 10em;
+      resize:both;
+      overflow: hidden;
+      border: thin solid;
+    }
+
+    svg {
+      display: block;
+      position: absolute;
+      height: 90%;
+      width: 90%;
+      top: 5%;
+      left: 5%;
+      background-color: darkSeaGreen;
+    }
+
+    path {
+      fill: darkslateblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <svg viewBox="0,0 20,20" preserveAspectRatio="xMinYMax meet">
+      <title>Spade</title>
+      <path d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+ S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" />
+    </svg>
+  </div>
+</body>
+
+</html>
