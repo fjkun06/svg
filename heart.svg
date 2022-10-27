@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" width="400px" height="400px" viewBox="0 0 80 80">
-  <title>Scaling with viewBox</title>
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" width="400px" height="400px" viewBox="-40 -40 80 80">
+  <title>Centering the scale effect using coordinates</title>
   <style type="text/css">
     use {
       fill: darkRed;
@@ -10,9 +10,10 @@
     }
   </style>
   <defs>
-    <path d="M10,6 Q10,0 15,0T20,6Q20,10 15,14
- T10,20Q10,18 5,14T0,6Q0,0 5,0T10,6Z" id="heart"/>
+    <path id="heart" d="M0,-4 Q0,-10 5,-10T10,-4Q10,0 5,4
+ T0,10Q0,8 -5,4T-10,-4Q-10,-10 -5,-10T0,-4Z" />
   </defs>
+
   <use xlink:href="#heart" transform="scale(4)" />
   <use xlink:href="#heart" transform="scale(3.5)" />
   <use xlink:href="#heart" transform="scale(3)" />
