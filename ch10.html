@@ -26,6 +26,7 @@
       align-items: center;
       justify-content: center;
       grid-template-columns: 30% 30% 30%;
+      grid-template-rows: repeat(2, 50%);
       /* grid-template-columns: repeat(3,1fr); */
       column-gap: 20px;
       border: 1px solid rgb(155, 47, 47);
@@ -58,26 +59,17 @@
         </style>
         <defs>
           <text id="five" fill="black" font-size="35">5</text>
-          <svg id="club" height="30" width="30" viewBox="0 0 20 20">
-            <title>Club</title>
-            <path fill="black" d="M9,15.5A5,5 0 1 1 5.5, 7.5
-            A5,5 0 1 1 14.5, 7.5A5,5 0 1 1 11, 15.5
-            Q11,20 13,20H7Q9,20 9,15.5Z" />
-          </svg>
+
         </defs>
 
+        <image width="200" height="200" xlink:href="./card1.png" id="c1" />
 
 
         <g fill="black" font-size="35" font-weight="bold">
           <use xlink:href="#five" text x="5" y="10" />
           <use xlink:href="#five" x="175" y="215" />
-        <g>
-          <use xlink:href="#club" x="45" y="10"/>
-          <use xlink:href="#club" x="85" y="80"/>
-          <use xlink:href="#club" x="45" y="150"/>
-          <use xlink:href="#club" x="125" y="10"/>
-          <use xlink:href="#club" x="125" y="150"/>
-        </g>>
+        </g>
+       
 
       </svg>
     </div>
@@ -104,11 +96,11 @@
         <g fill="black" font-size="35" font-weight="bold">
           <use xlink:href="#funf" text x="5" y="10" />
           <use xlink:href="#funf" x="175" y="215" />
-        <g>
-          <use xlink:href="#heart" x="85" y="10"/>
-          <use xlink:href="#heart" x="85" y="80"/>
-          <use xlink:href="#heart" x="85" y="150"/>
-        </g>>
+          <g>
+            <use xlink:href="#heart" x="85" y="10" />
+            <use xlink:href="#heart" x="85" y="80" />
+            <use xlink:href="#heart" x="85" y="150" />
+          </g>>
 
       </svg>
     </div>
@@ -125,7 +117,7 @@
           <text id="ae" fill="black" font-size="35">A</text>
           <svg id="square" height="100" width="100" viewBox="0 0 20 20">
             <title>Square</title>
-    <path fill="black" d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+            <path fill="black" d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
     S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" />
           </svg>
         </defs>
@@ -135,10 +127,105 @@
         <g fill="black" font-size="35" font-weight="bold">
           <use xlink:href="#ae" text x="5" y="10" />
           <use xlink:href="#ae" x="170" y="215" />
-        <g>
-          <use xlink:href="#square" x="50" y="50"/>
-         
-        </g>>
+          <g>
+            <use xlink:href="#square" x="50" y="50" />
+
+          </g>>
+
+      </svg>
+    </div>
+    <div class="sub">
+      <svg width="235px" height="295px" id="zoomi" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <style>
+          svg {
+            background-color: antiquewhite;
+            border-radius: 10%;
+            border: 2px solid green;
+          }
+        </style>
+        <defs>
+          <text id="five" fill="black" font-size="35">5</text>
+          <svg id="club" height="30" width="30" viewBox="0 0 20 20">
+            <title>Club</title>
+            <path fill="black" d="M9,15.5A5,5 0 1 1 5.5, 7.5
+            A5,5 0 1 1 14.5, 7.5A5,5 0 1 1 11, 15.5
+            Q11,20 13,20H7Q9,20 9,15.5Z" />
+          </svg>
+        </defs>
+
+
+
+        <g fill="black" font-size="35" font-weight="bold">
+          <use xlink:href="#five" text x="5" y="10" />
+          <use xlink:href="#five" x="175" y="215" />
+          <g>
+            <use xlink:href="#club" x="45" y="10" />
+            <use xlink:href="#club" x="85" y="80" />
+            <use xlink:href="#club" x="45" y="150" />
+            <use xlink:href="#club" x="125" y="10" />
+            <use xlink:href="#club" x="125" y="150" />
+          </g>>
+
+      </svg>
+    </div>
+    <div class="sub">
+      <svg width="235px" height="295px" id="zoomi" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <style>
+          svg {
+            background-color: antiquewhite;
+            border-radius: 10%;
+            border: 2px solid green;
+          }
+        </style>
+        <defs>
+          <text id="funf" fill="black" font-size="35">3</text>
+          <svg id="heart" height="30" width="30" viewBox="0 0 20 20">
+            <title>Heart</title>
+            <path fill="red" d="M10,6 Q10,0 15,0T20,6Q20,10 15,14
+         T10,20Q10,18 5,14T0,6Q0,0 5,0T10,6Z" />
+          </svg>
+        </defs>
+
+
+
+        <g fill="black" font-size="35" font-weight="bold">
+          <use xlink:href="#funf" text x="5" y="10" />
+          <use xlink:href="#funf" x="175" y="215" />
+          <g>
+            <use xlink:href="#heart" x="85" y="10" />
+            <use xlink:href="#heart" x="85" y="80" />
+            <use xlink:href="#heart" x="85" y="150" />
+          </g>>
+
+      </svg>
+    </div>
+    <div class="sub">
+      <svg width="235px" height="295px" id="zoomi" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <style>
+          svg {
+            background-color: antiquewhite;
+            border-radius: 10%;
+            border: 2px solid green;
+          }
+        </style>
+        <defs>
+          <text id="ae" fill="black" font-size="35">A</text>
+          <svg id="square" height="100" width="100" viewBox="0 0 20 20">
+            <title>Square</title>
+            <path fill="black" d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+    S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" />
+          </svg>
+        </defs>
+
+
+
+        <g fill="black" font-size="35" font-weight="bold">
+          <use xlink:href="#ae" text x="5" y="10" />
+          <use xlink:href="#ae" x="170" y="215" />
+          <g>
+            <use xlink:href="#square" x="50" y="50" />
+
+          </g>>
 
       </svg>
     </div>
