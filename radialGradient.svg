@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="200px" height="200px" viewBox="-100 -100 200 200">
+  <title>Bulls-eye Repeating Radial Gradient</title>
+  <style>
+    stop.A { stop-color: tomato; }
+    stop.B { stop-color: #222; }
+    svg{border: 1px solid red;}
+    </style>
+    <radialGradient id="bullseyee" r="0.6" fx="0.1" fy="0.1">
+    <stop class="A" offset="0.1667"/>
+    <stop class="B" />
+    <stop class="B" offset="0.3333"/>
+    <stop class="A" />
+    <stop class="A" offset="0.5"/>
+    <stop class="B" />
+    <stop class="B" offset="0.6667"/>
+    <stop class="A" />
+    <stop class="A" offset="0.8333"/>
+    <stop class="B" />
+    </radialGradient>
+    
+<radialGradient id="bullseye" spreadMethod="repeat" r="0.2">
+  <stop stop-color="tomato" offset="30%"/>
+  <stop stop-color="#222" offset="30%"/>
+</radialGradient>
+<circle r="50%" fill="url(#bullseyee)"/>
+</svg>
