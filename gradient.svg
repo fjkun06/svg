@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en-us" height="400px" width="400px">
+  <linearGradient id="horizontal">
+    <stop stop-color="gold" offset="0" />
+    <stop stop-color="deepPink" offset="1" />
+  </linearGradient>
+  <radialGradient id="gradient-ring">
+    <stop stop-opacity="0" offset="50%" />
+    <stop stop-opacity="1" offset="70%" />
+    <stop stop-opacity="1" offset="80%" />
+    <stop stop-opacity="0" offset="100%" />
+  </radialGradient>
+   <rect width="200px" height="200px" fill="url(#horizontal)"></rect> 
+  <rect width="200px" height="200px" fill="url(#gradient-ring)"></rect> -->
+
+
+
+ </svg>

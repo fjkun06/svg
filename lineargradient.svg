@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" width="200px" height="200px" viewBox="0 0 200 200">
+  <title>Simple Linear Gradient</title>
+  <linearGradient id="green-gradient" x1="0%" x2="10%" y1="0%" y2="10%" spreadMethod="repeat" gradientUnits="userSpaceOnUse">
+    <stop stop-color="red" offset="0" />
+    <stop stop-color="yellow" offset="0.3" />
+    <stop stop-color="green" offset="1" />
+  </linearGradient>
+  <linearGradient spreadMethod="reflect" href="#green-gradient" id="reflected" />
+  <linearGradient id="metal" spreadMethod="repeat" gradientTransform="scale(0.5) rotate(135)">
+    <stop stop-color="#808080" offset="0" />
+    <stop stop-color="#404040" offset="0.25" />
+    <stop stop-color="#C0C0C0" offset="0.35" />
+    <stop stop-color="#808080" offset="0.5" />
+    <stop stop-color="#E0E0E0" offset="0.7" />
+    <stop stop-color="#606060" offset="0.75" />
+    <stop stop-color="#A0A0A0" offset="0.9" />
+    <stop stop-color="#808080" offset="1" />
+  </linearGradient>
+
+  <rect width="100px" height="100px" ry="10%" fill="url(#green-gradient)" />
+  <rect width="100px" height="100px" ry="10%" fill="url(#reflected)" transform="translate(100,0)" />
+  <rect width="100px" height="100px" ry="10%" fill="url(#metal)" transform="translate(0,100)" />
+</svg>
