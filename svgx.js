@@ -8,18 +8,25 @@ function game() {
     scoreboard = document.getElementById("scoreboard"),
     svgNS = gameboard.namespaceURI;
 
-   let score = 0;
+  let score = 0;
 
   //init
   gameboard.setAttribute("viewBox", [0, 0, width, height]);
   for (let i = 0; i < nShapes; i++) {
-    const circle = document.createElementNS(svgNS, "circle");
-    circle.setAttribute("class", "clickable");
-    circle.setAttribute("r", 8);
-    circle.setAttribute("fill", randomColor());
-    circle.setAttribute("cx", Math.random() * width);
-    circle.setAttribute("cy", Math.random() * height);
-    gameboard.appendChild(circle);
+    // const circle = document.createElementNS(svgNS, "circle");
+    // circle.setAttribute("class", "clickable");
+    // circle.setAttribute("r", 8);
+    // circle.setAttribute("fill", randomColor());
+    // circle.setAttribute("cx", Math.random() * width);
+    // circle.setAttribute("cy", Math.random() * height);
+    // gameboard.appendChild(circle);
+    var use = document.createElementNS(svgNS, "use");
+    use.setAttribute("class", "clickable");
+    use.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#gem");
+    use.setAttribute("fill", randomColor());
+    use.setAttribute("x", Math.random() * width);
+    use.setAttribute("y", Math.random() * height);
+    gameboard.appendChild(use);
   }
 
   const endTime = Date.now() + timeLimit * 1000;
@@ -28,25 +35,25 @@ function game() {
   updateScore();
   gameboard.addEventListener("click", checkClick);
 
-  function randomColor (){
+  function randomColor() {
     const hue = Math.random() * 360,
       sat = Math.random() * 50,
       light = Math.random() * 30;
     return "hsl(" + hue + "," + sat + "%," + light + "%)";
-  };
+  }
 
-  function updateTime (){
+  function updateTime() {
     let timeLeft = endTime - Date.now();
     if (timeLeft <= 0) {
       endGame();
       timeLeft = 0;
     }
-    timer.textContent =  (timeLeft/1000).toFixed(0);
-  };
+    timer.textContent = (timeLeft / 1000).toFixed(0);
+  }
 
-  function updateScore () {
+  function updateScore() {
     scoreboard.textContent = score.toFixed(0);
-  };
+  }
 
   function endGame() {
     clearInterval(timeInterval);
@@ -54,9 +61,8 @@ function game() {
     document.documentElement.setAttribute("class", "game-over");
   }
 
-  
   function checkClick(e) {
-    const element = e.target;
+    const element =  e.target.correspondingUseElement || e.target;
     if (element.getAttribute("class") === "clickable") {
       element.setAttribute("class", "clicked");
       score++;
