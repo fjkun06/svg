@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    svg {
+      background-color: #000;
+    }
+
+    text {
+      fill: currentColor;
+    }
+
+    .clicked {
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    .game-over .clickable {
+      fill: black;
+    }
+
+    .game-over .clicked {
+      opacity: 1;
+      filter: drop-shadow(0 0 3px gold);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <div class="">
+    <svg id="gameboard" xmlns="http://www.w3.org/2000/svg" xml:lang="en">
+      <text color="wheat" id="timer" x="10" y="20" text-anchor="start"> Time remaining 0.0s</text>
+      <text color="wheat" id="scoreboard" x="245" y="20" text-anchor="start"> 0 collected</text>
+    </svg>
+  </div>
+  <script src="/svgx.js"></script>
+</body>
+
+</html>
