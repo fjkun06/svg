@@ -4,6 +4,7 @@ function game() {
     nShapes = 80,
     timeLimit = 15,
     gameboard = document.getElementById("gameboard"),
+    misses = document.getElementById("misses"),
     timer = document.getElementById("timer"),
     scoreboard = document.getElementById("scoreboard"),
     svgNS = gameboard.namespaceURI;
@@ -62,11 +63,28 @@ function game() {
   }
 
   function checkClick(e) {
-    const element =  e.target.correspondingUseElement || e.target;
+    const element = e.target.correspondingUseElement || e.target;
     if (element.getAttribute("class") === "clickable") {
       element.setAttribute("class", "clicked");
       score++;
       updateScore();
+    } else {
+      /* create a point for the click location */
+      var clickPoint = gameboard.createSVGPoint();
+      clickPoint.x = e.clientX;
+      clickPoint.y = e.clientY;
+      /* convert it to the coordinate system
+ of the `misses` group element */
+      var missPoint = clickPoint.matrixTransform(misses.getScreenCTM().inverse());
+      /* add a circle element centered at that point */
+      var circle = document.createElementNS(svgNS, "circle");
+      circle.setAttribute("class", "miss");
+      circle.setAttribute("r", 4);
+      circle.setAttribute("cx", missPoint.x);
+      circle.setAttribute("cy", missPoint.y);
+      circle.setAttribute("fill", "red");
+      circle.setAttribute("stroke", "yellow");
+      misses.appendChild(circle);
     }
   }
 }
