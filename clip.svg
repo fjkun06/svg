@@ -33,6 +33,10 @@
     <circle cx="25" r="12" cy="27" clip-path="url(#clip-right)"/>
   </clipPath>
 
+  <clipPath id="clip-text">
+    <text id="zazu" y="20" x="20">Hello</text>
+  </clipPath>
+
   <pattern patternUnits="userSpaceOnUse" width="2" height="100%" id="pat1" patternTransform="rotate(30)">
     <rect width="2" height="100%" fill="royalBlue" />
     <rect width="1" height="100%" fill="lightGreen" />
@@ -68,6 +72,9 @@
   </g>
   <g clip-path="url(#clip-both)">
     <use href="#circle" x="20" y="17" fill="url(#pat3)" />
+  </g>
+  <g clip-path="url(#clip-text)">
+    <use href="#circle" x="20" y="17" fill="black" />
   </g>
   <use href="#circle" x="15" y="27" fill="none" stroke="purple" stroke-width="1" />
   <use href="#circle" x="25" y="27" fill="none" stroke="purple" stroke-width="1" />
