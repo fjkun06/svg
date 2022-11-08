@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" height="360px" width="360px" viewBox="0 0 40 40">
+  <title>Two-Circle Venn Diagram</title>
+  <style>
+    svg {
+      border: 1px solid red;
+    }
+
+    .left {
+      fill: gold;
+    }
+
+    .right {
+      fill: lightGreen;
+    }
+  </style>
+  <defs>
+
+
+    <circle id="circle" r="12" />
+
+  </defs>
+
+
+  <clipPath id="clip-right">
+    <use href="#circle" x="15" y="27" />
+  </clipPath>
+
+  <clipPath id="clip-left">
+    <use href="#circle" x="25" y="27" />
+  </clipPath>
+
+  <clipPath id="clip-both">
+    <circle cx="25" r="12" cy="27" clip-path="url(#clip-right)"/>
+  </clipPath>
+
+  <pattern patternUnits="userSpaceOnUse" width="2" height="100%" id="pat1" patternTransform="rotate(30)">
+    <rect width="2" height="100%" fill="royalBlue" />
+    <rect width="1" height="100%" fill="lightGreen" />
+  </pattern>
+  <pattern patternUnits="userSpaceOnUse" width="2" height="100%" id="pat2" patternTransform="rotate(30)">
+    <rect width="2" height="100%" fill="royalBlue" />
+    <rect width="1" height="100%" fill="gold" />
+  </pattern>
+  <pattern patternUnits="userSpaceOnUse" width="3" height="100%" id="pat3" patternTransform="rotate(30)">
+    <rect width="3" height="100%" fill="gold" />
+    <rect width="2" height="100%" fill="royalBlue" />
+    <rect width="1" height="100%" fill="lightGreen" />
+  </pattern>
+  <pattern id="stripes" patternUnits="userSpaceOnUse" width="2" height="100%" patternTransform="rotate(30)">
+    <rect width="2" height="100%" class="left" />
+    <rect width="1" height="100%" class="right" />
+  </pattern>
+
+  <use href="#circle" x="15" y="27" fill="royalBlue" />
+  <use href="#circle" x="25" y="27" fill="lightGreen" />
+  <use href="#circle" x="20" y="17" fill="gold" />
+
+  <g clip-path="url(#clip-right)">
+    <use href="#circle" x="25" y="27" fill="url(#pat1)" />
+  </g>
+
+
+  <g clip-path="url(#clip-right)">
+    <use href="#circle" x="20" y="17" fill="url(#pat2)" />
+  </g>
+  <g clip-path="url(#clip-left)">
+    <use href="#circle" x="20" y="17" fill="url(#stripes)" />
+  </g>
+  <g clip-path="url(#clip-both)">
+    <use href="#circle" x="20" y="17" fill="url(#pat3)" />
+  </g>
+  <use href="#circle" x="15" y="27" fill="none" stroke="purple" stroke-width="1" />
+  <use href="#circle" x="25" y="27" fill="none" stroke="purple" stroke-width="1" />
+  <use href="#circle" x="20" y="17" fill="none" stroke="purple" stroke-width="1" />
+
+</svg>
