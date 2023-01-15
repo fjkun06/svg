@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" xml:lang="en">
+  <title>SVG Paths</title>
+  <style>
+    svg {
+      border: 1px solid red;
+      overflow: visible;
+      background-color: black;
+    }
+
+    .gasp-lines {
+      stroke: #000;
+      stroke-width: 1px;
+    }
+
+    #t1 {
+      font-size: 50px;
+      font-weight: 100;
+      font-family: Poppins, Brush Script,
+        Segoe Script, cursive;
+      fill: red;
+      stroke: black;
+      stroke-width: 2px;
+    }
+
+    #right {
+      transform: translate(100, 0) scale(-1, 1);
+    }
+  </style>
+  <defs>
+    <g id="iconsright">
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 60,42.5
+      A 10,10 0 1 1 50,68.5" transform="translate(-5.25,0)" />
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 50,35
+      A 20,20 0 1 1 50,75" />
+    </g>
+    <g id="iconsleft">
+      <!-- <path fill="none" stroke="currentColor" stroke-width="4px" d="M 50,35
+      A 17,17 0 1 0 37,65 " transform="translate(-1,1)" />
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 45,32.25
+      A 2,2 0 1 1 35,64.5 " transform="translate(-1,1)" />
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 45,25
+      A 25,25 0 1 0 45,73" />
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 40,24.25
+      A 1,1 0 1 1 43,73.5" /> -->
+
+
+
+      <!-- <path fill="none" stroke="currentColor" stroke-width="4px" d="M 50,35
+      A 20,20 0 1 1 50,75 "  transform="translate(1,-1)"/> -->
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 50,35
+      A 20,20 0 1 0 50,75 " />
+      <path fill="none" stroke="currentColor" stroke-width="4px" d="M 60,42.5
+      A 10,10 0 1 0 50,68.5" transform="translate(-4,0)" />
+
+    </g>
+  </defs>
+
+  <use href="#iconsleft" color="#00308F" />
+  <use href="#iconsright" color="white" transform="translate(0,-6.5)" />
+  <rect width="35" height="15" fill="black" x="45" y="45">
+
+  </rect>
+  <text fill="white" x="45" y="58.5" font-size="18" font-weight="bold" font-family="Verdana">
+    CT<tspan fill="#00308F">H</tspan>
+  </text>
+
+  <!-- <use id="right" href="#iconsleft" color="green" transform="translate(100,0) scale(-1,1)"/> -->
+</svg>

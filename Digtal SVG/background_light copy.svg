@@ -1,0 +1,63 @@
+<svg fill="none" preserveAspectRatio="none" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+
+  <svg height="100%" width="100%" viewBox="0 0 100 150">
+    <style>
+      svg,
+      path {
+        background-color: rgb(255, 255, 255);
+      }
+    </style>
+    <defs>
+      <path id="path1" d="M-5,0 C5,25 10,25 25,6.1 S 50,20 65,15 C 76,12 85,-15 102,10" stroke="black" />
+      <path id="path2" d="M-1,70 C25,85 40,50 52,65 S 85,55 102,65" stroke="red" />
+      <path id="path3" d="M15,45 C-5,35 5,15 25,35 S 50,15 70,25 C80,30 55,40 95,50 S95,65 70,60 C58,59 50,50 30,65 C15,80 -1,65 10,40" stroke="BLACK" transform="scale(1,1)" />
+
+      <!--ellipsis -->
+      <ellipse id="e1" rx="80" ry="15" cx="30" cy="58" />
+      <ellipse id="e3" rx="90" ry="15" cx="30" cy="58" stroke-width="0.5" />
+      <ellipse id="e2" rx="80" ry="45" cx="30" cy="58" stroke-width="1" />
+      <ellipse id="e4" rx="95" ry="60" cx="30" cy="58" stroke-width="0.5" />
+
+
+
+      <g id="l1" href="#path2" transform="translate(-10,-5) scale(2,1)">
+        <use href="#path1" stroke-width="0.5" />
+        <use href="#path1" stroke-width="0.1" transform="translate(0,5)" />
+      </g>
+
+      <g id="l3" transform="translate(-20,65) scale(1.5,1)">
+        <use href="#path2" transform="translate(0,10)" />
+        <use href="#path2" stroke-width="0.1" transform="translate(0,13)" />
+      </g>
+
+      <g id="l2" transform="translate(-40,-5) scale(1.5,1)">
+        <use href="#path3" />
+        <use href="#path3" stroke-width="0.3" transform=" scale(0.9) translate(5,5)" />
+      </g>
+
+    </defs>
+
+    <!-- circles -->
+    <use href="#e1" stroke="red" transform="skewY(9) translate(40,45)" stroke=""/>
+    <use href="#e3" stroke="red" transform="skewY(9) translate(40,55) scale(0.8)" stroke=""/>
+    <use href="#e2" stroke="black" x="-60" y="60" transform="skewY(-39) scale(0.5) translate(-20,100)" stroke=""/>
+    <use href="#e4" stroke="black" x="-60" y="60" transform="skewY(-39) scale(0.3) translate(-20,240)" stroke=""/>
+
+    <!-- l1-->
+    <use href="#l1" stroke=""/>
+    <use href="#l1" transform="translate(-10,70)" stroke=""/>
+
+    <!-- l2-->
+    <use href="#l2"stroke="" />
+
+    <!-- l3-->
+
+    <use href="#l3" transform=" scale(1.3) translate(0,-30.5)"stroke="" />
+    <rect fill="white" fill-opacity="0.75" x="-30" y="0" width="180" height="150" />
+
+  </svg>
+
+
+
+
+</svg>

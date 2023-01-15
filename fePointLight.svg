@@ -1,0 +1,49 @@
+<svg
+  width="1366"
+  height="730"
+  style="border: 1px solid red; overflow: visible;"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="spotlight">
+      <feSpecularLighting
+        result="spotlight"
+        specularConstant="1.5"
+        specularExponent="80"
+        lighting-color="green">
+        <fePointLight x="750" y="400" z="500" id="test"/>
+      </feSpecularLighting>
+      <feComposite
+        in="SourceGraphic"
+        in2="spotlight"
+        operator="arithmetic"
+        k1="0"
+        k2="1"
+        k3="1"
+        k4="0" />
+        <feMerge>
+          <feMergeNode in="SourceGraphic"/>
+          <feMergeNode in="spotlight"/>
+        </feMerge>
+    </filter>
+    <filter id="displacementFilter">
+      <feTurbulence
+        type="turbulence"
+        baseFrequency="20.095"
+        numOctaves="4"
+        seed="10"
+        stitchTiles="stitch"
+        result="turbulence" />
+      <feDisplacementMap
+        in2="turbulence"
+        in="SourceGraphic"
+        scale="1"
+        xChannelSelector="B"
+        yChannelSelector="A" />
+    </filter>
+  </defs>
+
+    <!-- <rect width="200" height="200" style="filter:url(#spotlight);" fill="black"/> -->
+    <circle r="30%" cx="55%" cy="50%" style="filter:url(#spotlight);" fill="black"/>
+    <circle r="10" cx="75" cy="98%" fill="black" fill-opacity="0.4" transform="scale(10,1)" filter="url(#displacementFilter)" />
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 120" width="471px" height="230px">
+  <title>Waves</title>
+  <style>
+    svg {
+      background-color: transparent;
+      background-color: green;
+      border: 1px solid;
+    }
+  </style>
+  <title>Asymmetrical Reflected Radial Gradient</title>
+  <radialGradient id="ripples" spreadMethod="reflect" cx="20%" cy="50%" r="10%" fx="15%">
+    <stop stop-color="lightBlue" offset="0.2" />
+    <stop stop-color="lightSlateGray" offset="0.6" />
+  
+    <stop stop-color="darkSlateBlue" offset="1" />
+  </radialGradient>
+
+  <defs>
+    <!-- <path id="largest-arc" d="M10,120 Q32,112 20,100 L20,100 15,95 Q10,90 15,85 T25,80 C40,85 40,65 35,60 S25,40 45,45 C55,50 70,50 65,35 S80,20 90,25 Q100,30 105,20 T125,20 C130,25 145,25 150,18 S165,13 170,23 Q175,36 185,25 T205,30 C214,45 220,30 225,48 S230,48 240,68 Q243,75 245,70"/> -->
+    <!-- <path id="largest-arc" d="M10,120 Q32,112 20,100 L20,100 15,95 Q10,90 15,85 T25,80 C40,85 40,65 35,60 S25,40 45,45 C55,50 70,50 65,35 S80,20 90,25 Q100,30 105,20 T125,20 C130,25 145,25 150,18 S165,13 170,23 Q175,36 185,25 T215,40 Q225,50 245,35" fill="none" stroke="red"/> -->
+    <path id="largest-arc" d="M-10,122 Q10,116 5,110 C-25,91 -10,60 15,60 S25,60 30,40 C35,20 60,0 90,20 Q96,24 110,15 C130,-2 175,-5 180,20 S190,5 245,15"/>
+  </defs>
+  <!-- <rect width="100%" height="100%" rx="10%" fill="url(#ripples)" /> -->
+  <!-- <path id="heart" d="M20,120 Q32,112 20,100 L20,100 15,95 Q10,90 15,85 T25,80 Q30,80 35,87.5 T42,80 C44,87 30,55 50,55" fill="none" stroke="red"/> -->
+  <!-- <path id="heart" d="M10,120 Q32,112 20,100 L20,100 15,95 Q10,90 15,85 T25,80 Q30,80 35,87.5 T43,87 C45,87 30,55 50,55 Q60,55 61,70 T73,75 C72.5,75 95,60 80,45 S70,10 100,25" fill="none" stroke="red"/> -->
+  <path id="hearEt" d="M5,120 A100,100 0 1 1 260,180" fill="TRANSPARENT" stroke="red"/>
+  <!-- <use xlink:href="#largest-arc" stroke="yellow" fill="none" y="1"/> -->
+  <use xlink:href="#largest-arc" stroke="yellow" fill="none" />
+
+  <use xlink:href="#largest-arc" stroke="RED" x="23" y="25" transform="scale(0.9)" fill="none"/>
+  <!-- <use xlink:href="#largest-arc" stroke="purple" x="80" y="61" transform="scale(0.7)" fill="none"/> -->
+
+  <view id="select-waves" viewBox="0,0 205,120" />
+  <!-- <text fill="red" y="50%" x="50%" text-anchor="middle" dy="0.25em">
+    <a xlink:href="#zoomi">ZoomO</a>
+
+  </text>
+  <text fill="red" y="95%" x="30%" font-size="15">
+    <a xlink:href="#zoom">ZoomI</a>
+
+  </text> -->
+  <!-- <path id="heart" stroke="darkRed" d="M10,6 Q10,0 15,0T20,6Q20,10 15,14
+  T10,20Q10,18 5,14T0,6Q0,0 5,0T10,6Z" /> -->
+  <!-- <path id="spade" stroke="#222" transform="translate(22,0)" d="M9,15C9,20 0,21 0,16S6,9 10,0C14,9 20,11 20,16
+  S11,20 11,15Q11,20 13,20H7Q9,20 9,15Z" /> -->
+</svg>

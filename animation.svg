@@ -12,8 +12,8 @@
   <use xlink:href="#bead" fill="indianRed" stroke="firebrick" />
   <script>
     //<![CDATA[
-      (function () {
-        var track = document.getElementById("track"),
+    (function () {                                              
+    var track = document.getElementById("track"),
           trackLength = track.getTotalLength(),
           beads = document.querySelectorAll("[*|href='#bead']"),
           nBeads = beads.length,

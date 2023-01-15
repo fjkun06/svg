@@ -110,7 +110,7 @@ Segoe Script, cursive">Some Test SVG Text</text>
  A 5,5 0 1 1 10.5,5.5
  A 5,5 0 1 1 8.5,10.5
  " fill="black" stroke="red" stroke-width="0.5"/> -->
-  <!-- <path fill="black"
+  <path fill="black"
  d="M 9,15.5
  A 4,4 0 1 1 5.5,7.5
  A 5,5 0 1 1 14.5,7.5
@@ -118,7 +118,7 @@ Segoe Script, cursive">Some Test SVG Text</text>
  Q 11,20 13,20
  H 7
  Q 9,20 9,15.5 Z"
-  /> -->
+  />
   <!-- <path d="M0,0 Q377.95,0 377.95,377.95
     S 20,18 15,18 C 11,20 10,16 10,15 
  Q0,377.95 0,0 Z" fill="royalBlue" /> -->

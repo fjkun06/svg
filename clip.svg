@@ -15,6 +15,7 @@
   </style>
   <defs>
 
+    <image href="card1.png" width="100%" height="100%" id="pic"/>
 
     <circle id="circle" r="12" />
 
@@ -34,7 +35,7 @@
   </clipPath>
 
   <clipPath id="clip-text">
-    <text id="zazu" y="20" x="20">Hello</text>
+    <text id="zazu" y="20" x="0" font-size="16px">Hello</text>
   </clipPath>
 
   <pattern patternUnits="userSpaceOnUse" width="2" height="100%" id="pat1" patternTransform="rotate(30)">
@@ -74,7 +75,7 @@
     <use href="#circle" x="20" y="17" fill="url(#pat3)" />
   </g>
   <g clip-path="url(#clip-text)">
-    <use href="#circle" x="20" y="17" fill="black" />
+    <use href="#pic" x="0" y="7"/>
   </g>
   <use href="#circle" x="15" y="27" fill="none" stroke="purple" stroke-width="1" />
   <use href="#circle" x="25" y="27" fill="none" stroke="purple" stroke-width="1" />

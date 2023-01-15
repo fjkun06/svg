@@ -1,0 +1,30 @@
+<svg fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMid slice">
+<!-- <svg fill="none" preserveAspectRatio="none"  viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> -->
+
+  <svg viewBox="0 0 400 100" transform="scale(4)" >
+    <style>
+      svg,
+      path {
+        background-color: rgb(233, 28, 28);
+        border: 3px solid black;
+        overflow-x: none;
+      }
+    </style>
+    <!-- <g >
+     
+    </g> -->
+
+    <defs>
+        <!-- <circle cx="50" cy="50" r="50" fill="yellow" z-index="22" /> -->
+      
+    </defs>
+
+
+  </svg>
+  <rect id="test" width="40" height="80" fill="black"  x="0" y="0"/>
+
+  <view id="t1" viewBox="0 0 100 50" />
+
+</svg>
+
+<!-- preserveAspectRatio="xMaxYMid slice" -->
